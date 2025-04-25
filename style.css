@@ -1,0 +1,19 @@
+h1{
+    background-color:brown;
+    color:blue;
+    text-align:center;
+}
+#bipin{
+    background-color:red;
+    text-align:center;
+    float:left;
+    height:500px;
+    width:500px;
+}
+.Rohit{
+    background-color:green;
+    text-align:center;
+    float:right;
+    height:500px;
+    width:500px;
+}
