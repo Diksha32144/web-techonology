@@ -4,47 +4,27 @@
    
     <title>Document</title>
   <style>
-        ul{
-            list-style-type:none;
-            margin:0px;
-            padding:20px;
-          float: right;
-            background-color:rgb(209, 172, 22);
-        }
-        li{
-            display:inline;
-        }
-        li a{
-            
-            color:rgb(4, 24, 15);
-            text-decoration:none;
-            padding:30px 60px;
-            text-align:center;
-        }
-        li a:hover{
-            background-color:rgb(174, 231, 109);
-            color:rgb(178, 17, 17);
-        }
-img{
-margin:90px;
-margin-top:0px;
-width:1320px;
-height:750px;
-left:34%;
-}
-/*.catagory{
-  display:inline-flex
-}
-.img1{
+.nav{
+  display: flex;
+  justify-content: space-between;
+  height: 10vh;
+  background-color: rgb(211, 147, 50);
   
-  width: 500px;
 }
-.img2{
-  position: relative;
-  left: 34%;
-  bottom: 454px;
-}*/
+ul{
+  display: flex;
+  justify-content:space-between;
+  gap: 50px;
+  list-style: none;
+  padding-top: 10px  ;
+  padding-right: 10px;
 
+  
+}
+a{
+  text-decoration: none;
+color:black;
+}
 .intro {
       text-align: center;
       padding: 60px 20px 30px;
@@ -56,10 +36,7 @@ left:34%;
       text-align:center;
     }
 
-    .intro em {
-      color: #c18f8f;
-      font-style: italic;
-    }
+
 
     .intro button {
       margin-top: 0px;
@@ -75,19 +52,19 @@ left:34%;
     .projects {
       display: flex;
       justify-content: center;
-      /*gap: 20px;*/
+      gap: 20px;
       flex-wrap: wrap;
       padding: 30px 20px;
     }
 
-    .project-card1,.project-card2,.project-card3 {
+    .project-card1,.project-card2,.project-card3,.project-card4 {
       background: white;
       border-radius: 20px;
       overflow: hidden;
       box-shadow: 0 2px 8px rgba(0,0,0,0.1);
       text-align: center;
       width: 350px;
-      
+      height: 300px;
     }
 
     .project-card img {
@@ -99,19 +76,144 @@ left:34%;
       padding: 10px;
       font-size: 15px;
     }
+    .img1{
+      height: 200px;
+      background-image: url("candle1.jpg");
+      background-position: center;
+      background-size: cover;
+    }
+    .img2{
+      height: 200px;
+      background-image: url("candle2.jpeg");
+      background-position: center;
+      background-size: cover;
+    }
+    .img3{
+      height: 200px;
+      background-image: url("candle3.jpg");
+      background-position: center;
+      background-size: cover;
+    }
+    .img4{
+      height: 200px;
+      background-image: url("lamp2.jpg");
+      background-position: center;
+      background-size: cover;
+    }
+    .img5{
+      height: 200px;
+      background-image: url("lamp.webp");
+      background-position: center;
+      background-size: cover;
+    }
+    .img6{
+      height: 200px;
+      background-image: url("sain.jpg");
+      background-position: center;
+      background-size: cover;
+     
+    }
+    .img7{
+      height: 200px;
+      background-image: url("flower1.avif");
+      background-position: center;
+      background-size: cover;
+     
+    }
+    .img8{
+      height: 200px;
+      background-image: url("flower2.jpeg");
+      background-position: center;
+      background-size: cover;
+     
+    }
+    .img9{
+      height: 200px;
+      background-image: url("flower3.avif");
+      background-position: center;
+      background-size: cover;
+    }
+    .img10{
+      height: 200px;
+      background-image: url("shoe piece.jpg");
+      background-position: center;
+      background-size: cover;
+     
+    }
+    .img11{
+      height: 200px;
+      background-image: url("show2.webp");
+      background-position: center;
+      background-size: cover;
+     
+    }
+    .img12{
+      height: 200px;
+      background-image: url("show11.avif");
+      background-position: center;
+      background-size: cover;
+     
+    }
+    .logo{
+      height: 100px;
+    width: 100px;
+    background-image: url("logo.jpg");
+    background-size: contain;
+    background-position: center;
+margin-bottom: 10px;
+    }
+    .int{
+      width: 100vw;
+      height: 700px;
+      background-image: url("interior.jpg");
+      background-position: center;
+      background-size: contain;
+      background-repeat: no-repeat;
+     
+    }
+    .intb{
+      width: 100vw;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+   
+    }
+    .but{
+      display: flex;
+      justify-content: space-around;
+      gap: 20px;
+      
+    }
+    button{
+      background-color: lightblue;
+      color: black;
+    }
+    li:hover{
+      background-color: rgb(153, 190, 97);
+      padding-top: 10px  ;
+  padding-right: 10px;
+  
+    }
+    .contact{
+      text-align:center;
+    }
     </style>
 </head>
 <body>
-  <div>
-    <ul>
+
+ 
+  <div class="nav">
+    <div class="logo">
+     
+    </div>
+    <div class="list"><ul>
     <li><a href="#"><B>HOME</B></a></li>
     <li><a href="#"><B>ABOUT US</B></a></li>
     <li><a href="#"><B>CONTACT</B></a></li>
     <li><a href="#"><B>SERVICES</B></a></li>
     <li><a href="#"><B>LOCATION</B></a></li>
    </ul> 
-
-
+</div>
   </div>
   
 
@@ -119,79 +221,177 @@ left:34%;
     
     <button>Creating harmonious  & practical interiors for life & work</button>
   </section>
-  <img src="interior.jpg">
-
+  <div class="intb">
+  <div class="int">
+  <!-- <img src="interior.jpg"> -->
+</div>
+</div>
   <h1 style="text-align:center"><i>Featured Catogories</i></h1>
 <h2 style="text-align:center">Candle:-</h2>
   <section class="projects">
-    <div class="project-card">
-      <img src="candle1.jpg" alt="Wabi Sabi Interior">
-      <p>Interior design in the style of Wabi Sabi</p>
+    <div class="projects">
+    <div class="project-card1">
+    <div class="img1">
+      </div>
+      <p><B>Scented Candle</B><br>"A whisper of light, a breath of heaven."
+
+      </p>
+      <div class="but">
+      <button>Buy</button>
+      <button>Add to cart</button>
+      </div>
     </div>
-    <div class="project-card">
-      <img src="candle2.jpeg" alt="Minimalist Interior">
-      <p>Interior design</p>
-    </div>
-    <div class="project-card">
-      <img src="candle3.jpg" alt="Modern Art Interior">
-      <p>Interior design</p>
+    
+    <div class="project-card1">
+      <div class="img2">
+        </div>
+        <p><B>Unity Candle</B><br>"Together, we burn brighter."
+
+        </p>
+        <div class="but">
+          <button>Buy</button>
+      <button>Add to cart</button>
+      </div>
+      </div>
+
+      <div class="project-card1">
+        <div class="img3">
+          </div>
+          <p><B>Flameless Candle</B><br>"Stillness lit without the burn. </p>
+          <div class="but">
+          <button>Buy</button>
+      <button>Add to cart</button>
+        </div>
+        </div>
+
       
-    </div>
   </section>
 
 
   <h2 style="text-align:center">Lamp:-</h2>
   <section class="projects">
-    <div class="project-card">
-      <img src="lamp.webp" alt="Wabi Sabi Interior">
-      <p>Interior design in the style of Wabi Sabi</p>
-    </div>
-    <div class="project-card">
-      <img src="lamp2.jpg" alt="Minimalist Interior">
-      <p>Interior design</p>
-    </div>
-    <div class="project-card">
-      <img src="sain.jpg" alt="Modern Art Interior">
-      <p>Interior design</p>
+    <div class="projects">
+    <div class="project-card2">
+      <div class="img4">
+        </div>
+        <p><B>Edison Lamp</B><br>"Edison’s dream turned darkness into destiny."
+
+        </p>
+        <div class="but">
+          <button>Buy</button>
+      <button>Add to cart</button>
+      </div>
+      </div>
       
-    </div>
+      <div class="project-card2">
+        <div class="img5">
+          </div>
+          <p><B>Ceramic Lamp</B><br>"Molded by hands, glowing with soul."
+
+          </p>
+          <div class="but">
+          <button>Buy</button>
+      <button>Add to cart</button>
+        </div>
+      </div>
+
+        <div class="project-card2">
+          <div class="img6">
+            </div>
+            <p><B>Desk Lamp</B><br>"Where ideas spark under a humble glow."
+
+            </p>
+            <div class="but">
+          <button>Buy</button>
+      <button>Add to cart</button>
+          </div>
+          </div>
   </section>
 
-  <h2 style="text-align:center">Dried flowers:-</h2>
+  <h2 style="text-align:center">Dried flower:-</h2>
   <section class="projects">
-    <div class="project-card">
-      <img src="flower1.avif" alt="Wabi Sabi Interior">
-      <p>Interior design in the style of Wabi Sabi</p>
-    </div>
-    <div class="project-card">
-      <img src="flower2.jpeg" alt="Minimalist Interior">
-      <p>Interior design</p>
-    </div>
-    <div class="project-card">
-      <img src="flower3.avif" alt="Modern Art Interior">
-      <p>Interior design</p>
+    <div class="projects">
+    <div class="project-card3">
+      <div class="img7">
+        </div>
+        <p><B>Rose</B><br>"Faded petals, everlasting love."        </p>
+        <div class="but">
+          <button>Buy</button>
+      <button>Add to cart</button>
+      </div>
+      </div>
       
-    </div>
-  </section>
+      <div class="project-card3">
+        <div class="img8">
+          </div>
+          <p><B>Faful florist</B><br>"A season ending, a soul awakening."          </p>
+          <div class="but">
+          <button>Buy</button>
+      <button>Add to cart</button>
+        </div>
+        </div>
 
+        <div class="project-card3">
+          <div class="img9">
+            </div>
+            <p><B>Melbourne</B><br>"Melbourne — where every corner tells a story."            </p>
+            <div class="but">
+          <button>Buy</button>
+      <button>Add to cart</button>
+          </div>
+          </div>
+  </section>
 
   <h2 style="text-align:center">Show pieces:-</h2>
   <section class="projects">
-    <div class="project-card">
-      <img src="shoe piece.jpg" alt="Wabi Sabi Interior">
-      <p>Interior design in the style of Wabi Sabi</p>
+    <div class="projects">
+    <div class="project-card4">
+    <div class="img10">
+      </div>
+      <p><B>Couple showpiece</B><br>"Together, we are home."
+
+      </p>
+      <div class="but">
+      <button>Buy</button>
+      <button>Add to cart</button>
+      </div>
     </div>
-    <div class="project-card">
-      <img src="show11.avif" alt="">
-      <p>Moving sand</p>
-    </div>
-    <div class="project-card">
-      <img src="show2.webp" alt="Modern Art Interior">
-      <p>Interior design</p>
+    
+    <div class="project-card4">
+      <div class="img11">
+        </div>
+        <p><B>Bird sculpture</B><br>"Wings carved from dreams."        </p>
+        <div class="but">
+          <button>Buy</button>
+      <button>Add to cart</button>
+      </div>
+      </div>
+      <div class="project-card4">
+        <div class="img12">
+          </div>
+          <p><B>Moving sand</B><br>"Moments flow, beauty stays."
+
+          </p>
+          <div class="but">
+          <button>Buy</button>
+      <button>Add to cart</button>
+        </div>
+        </div>
+
       
-    </div>
   </section>
 
+<div class="contact">
+<h1>Contact us</h1>
+<h3>Email:dikshakarna071@gmail.com</h3>
+</div>
+<form  style="max-width:500px; margin:auto;">
+  <input type="text" name="name" value="Your Name" required style="width:100%; padding:10px; margin:10px 0; border-radius:5px; border:1px solid #ccc;">
+  <input type="email" name="email" value="Your Email" required style="width:100%; padding:10px; margin:10px 0; border-radius:5px; border:1px solid #ccc;">
+  <textarea name="message" rows="5" required style="width:100%; padding:10px; margin:10px 0; border-radius:5px; border:1px solid #ccc;">Your message</textarea>
+  <button type="submit" style="background-color:#5b3e3e; color:white; padding:10px 20px; border:none; border-radius:6px; ">Submit</button>
+</form>
+</div>
   </div>
 
 </body>

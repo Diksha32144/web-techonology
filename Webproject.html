@@ -13,40 +13,7 @@
       box-sizing: border-box;
     }
 
-    body {
-      font-family: 'Segoe UI', sans-serif;
-      background-color: #f7f5f2;
-      color: #3b2c2c;
-      line-height: 1.6;
-    }
-
-    .hero {
-      background-image: url('https://via.placeholder.com/1200x500');
-      background-size: cover;
-      background-position: center;
-      height: 300px;
-      display: flex;
-      align-items: center;
-      justify-content: center;
-    }
-
-    .hero .overlay {
-      text-align: center;
-      color: white;
-      background: rgba(0, 0, 0, 0.3);
-      padding: 20px;
-    }
-
-    .hero h1 {
-      font-size: 60px;
-      font-weight: 300;
-    }
-
-    .hero p {
-      font-size: 18px;
-      margin-top: 10px;
-    }
-
+  
     .navbar {
       background-color: white;
       box-shadow: 0 1px 3px rgba(0,0,0,0.1);
@@ -62,7 +29,9 @@
     }
 
     .navbar ul {
-      list-style: none;
+      list-style-type: none;
+      margin:0;
+      padding:0;
       display: flex;
       gap: 20px;
       align-items: center;
@@ -82,66 +51,7 @@
       color: #999;
     }
 
-    .intro {
-      text-align: center;
-      padding: 60px 20px 30px;
-    }
 
-    .intro h2 {
-      font-size: 26px;
-      font-weight: 400;
-    }
-
-    .intro em {
-      color: #c18f8f;
-      font-style: italic;
-    }
-
-    .intro button {
-      margin-top: 20px;
-      padding: 10px 25px;
-      font-size: 16px;
-      background-color: #5b3e3e;
-      color: white;
-      border: none;
-      border-radius: 6px;
-      cursor: pointer;
-    }
-
-    .projects {
-      display: flex;
-      justify-content: center;
-      gap: 20px;
-      flex-wrap: wrap;
-      padding: 30px 20px;
-    }
-
-    .project-card {
-      background: white;
-      border-radius: 12px;
-      overflow: hidden;
-      box-shadow: 0 2px 8px rgba(0,0,0,0.1);
-      text-align: center;
-      width: 300px;
-    }
-
-    .project-card img {
-      width: 100%;
-      height: auto;
-    }
-
-    .project-card p {
-      padding: 10px;
-      font-size: 15px;
-    }
-
-    .about {
-      max-width: 800px;
-      margin: 50px auto;
-      text-align: center;
-      font-size: 16px;
-      padding: 0 20px;
-    }
   </style>
 </head>
 <body>
@@ -154,39 +64,14 @@
       <ul>
         <li><a href="#">Home</a></li>
         <li><a href="#">Services</a></li>
-        <li><a href="#">About us</a></li>
+        <li><a href="#">About </a></li>
         <li><a href="#">Contacts</a></li>
       
       </ul>
     </div>
   </nav>
 
-  <section class="intro">
-    <h2><em>Creating harmonious</em> & practical interiors for life <em>& work</em></h2>
-    <button>Calculate project cost</button>
-  </section>
-
-  <section class="projects">
-    <div class="project-card">
-      <img src="https://via.placeholder.com/300x400" alt="Wabi Sabi Interior">
-      <p>Interior design in the style of Wabi Sabi</p>
-    </div>
-    <div class="project-card">
-      <img src="https://via.placeholder.com/300x400" alt="Minimalist Interior">
-      <p>Interior design</p>
-    </div>
-    <div class="project-card">
-      <img src="https://via.placeholder.com/300x400" alt="Modern Art Interior">
-      <p>Interior design</p>
-    </div>
-  </section>
-
-  <section class="about">
-    <p>
-      <strong>Corner</strong> design studio offers a unique & personalized approach to interior design,
-      combining natural materials, functional design, sustainable practices, and beautiful forms for modern living.
-    </p>
-  </section>
+  
 
 </body>
 </html>
