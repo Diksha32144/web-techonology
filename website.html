@@ -1,3 +1,4 @@
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -16,9 +17,9 @@
     flex-wrap: wrap;
     justify-content: space-between;
     padding: 15px 40px;
-    color:black;
+    color:rgb(247, 245, 245);
     align-items: center;
-    background-color: rgb(211, 147, 50);
+    background-color: rgb(167, 143, 44);
 
 }
 .list{
@@ -34,7 +35,7 @@ li{
 }
 a{
     text-decoration: none;
-    color:black;
+    color:rgb(246, 243, 243);
     
 }
 a:hover{
@@ -44,21 +45,98 @@ a:hover{
 .logo{
     margin-left: 80px;
 }
-.intro {
-      text-align: center;
-      padding: 60px 20px 30px;
+.h2{
+    text-align: center;
+      padding:20px;
       margin-top: 0px;
+      background-color: lightblue;
+      color:rgb(23, 22, 22);
+}
+.home{
+      width: 100vw;
+      height: 700px;
+      background-image: url("interior.jpg");
+      background-position: center;
+      background-size: contain;
+      background-repeat: no-repeat;
+     
     }
-    .intro button {
-      margin-top: 0px;
-      padding: 10px 25px;
-      font-size: 16px;
-      background-color: #5b3e3e;
-      color: white;
-      border: none;
-      border-radius: 6px;
-    
+
+    .products {
+  padding: 40px;
+  background-color: #f2f2f2;
+  text-align: center;
+}
+
+.products h2 {
+  margin-bottom: 30px;
+  font-size: 28px;
+}
+
+.product-grid {
+  display: flex;
+  gap: 30px;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.product-card {
+  background-color: white;
+  padding: 20px;
+  border-radius: 12px;
+  box-shadow: 0 0 10px rgba(0,0,0,0.1);
+  max-width: 250px;
+  text-align: center;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+.product-card:hover {
+  transform: scale(1.05);
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.2);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  cursor: pointer;
+}
+
+.product-card img {
+  width: 250px;
+  height: 250px;
+  border-radius: 8px;
+}
+
+.product-card h3 {
+  margin: 15px 0 10px;
+}
+
+.product-card p {
+  font-size: 14px;
+  color: #555;
+}
+.product-buttons {
+  display: flex;
+  justify-content: space-around;
+  margin-top: 15px;
+}
+
+.product-buttons button {
+  padding: 8px 14px;
+  border: none;
+  background-color: #f5b301;
+  }
+
+.add-cart:hover {
+  background-color: #d89e00;
+  transform: scale(1.05);
+}
+.buy-now:hover {
+  background-color: #36be53;
+  transform: scale(1.05);
+color: #f2f2f2;
+}
+
+  .contact{
+      text-align:center;
+      padding:20px;
     }
+
 </style>
 </head>
 <body>
@@ -74,9 +152,154 @@ a:hover{
     <li><a href="#"><B>LOCATION</B></a></li>
 </div>
     </nav>
-    <section class="intro">
+    <section class="h2">
     
-        <button>Creating harmonious  & practical interiors for life & work</button>
+        <h2>Creating harmonious  & practical interiors for life & <br>work</h2>
       </section>
+      <div class="home">
+</div>
+
+  <h1 style="text-align:center;padding:25px;">Products catogories</h1>
+  <h2 style="text-align:center;padding:15px;">Candles</h2>
+  <div class="product-grid">
+    <div class="product-card">
+      <img src="candle1.jpg" alt="Sofa">
+      <h3>Santed Candle</h3>
+      <p>"A whisper of light, a breath of heaven."</p>
+      <div class="product-buttons">
+        <button class="add-cart">Add to Cart</button>
+        <button class="buy-now">Buy Now</button>
+      </div>
+    </div>
+
+    <div class="product-card">
+      <img src="candle2.jpeg" alt="Lamp">
+      <h3>Unity Candle</h3>
+      <p>"Together, we burn brighter."
+    </p>
+      <div class="product-buttons">
+        <button class="add-cart">Add to Cart</button>
+        <button class="buy-now">Buy Now</button>
+      </div>
+    </div>
+    <div class="product-card">
+      <img src="candle3.jpg" alt="Table">
+      <h3>Flameless CAndle</h3>
+      <p>"Stillness lit without the burn.</p>
+      <div class="product-buttons">
+        <button class="add-cart">Add to Cart</button>
+        <button class="buy-now">Buy Now</button>
+      </div>
+    </div>
+  </div>
+
+
+  <h2 style="text-align:center;padding:15px;">Dried Flowers</h2>
+  <div class="product-grid">
+    <div class="product-card">
+      <img src="flower1.avif" alt="Sofa">
+      <h3>Rose</h3>
+      <p>"Faded petals, everlasting love."  </p>
+      <div class="product-buttons">
+        <button class="add-cart">Add to Cart</button>
+        <button class="buy-now">Buy Now</button>
+      </div>
+      </div>
+    <div class="product-card">
+      <img src="flower2.jpeg" alt="Lamp">
+      <h3>Faful florist</h3>
+      <p>"A season ending , a soul awakening. " </p>
+      <div class="product-buttons">
+        <button class="add-cart">Add to Cart</button>
+        <button class="buy-now">Buy Now</button>
+      </div>
+      </div>
+    <div class="product-card">
+      <img src="flower3.avif" alt="Table">
+      <h3>Desk Lamp</h3>
+      <p>Classic wooden table perfect for any dining space.</p>
+      <div class="product-buttons">
+        <button class="add-cart">Add to Cart</button>
+        <button class="buy-now">Buy Now</button>
+      </div>
+      </div>
+  </div>
+
+
+  <h2 style="text-align:center;padding:15px;">Lamps</h2>
+  <div class="product-grid">
+    <div class="product-card">
+      <img src="lamp.webp" alt="Sofa">
+      <h3>Cermic Lamp</h3>
+      <p>"Molded by hands, glowing with soul."</p>
+      <div class="product-buttons">
+        <button class="add-cart">Add to Cart</button>
+        <button class="buy-now">Buy Now</button>
+      </div>
+      </div>
+    <div class="product-card">
+      <img src="lamp2.jpg" alt="Lamp">
+      <h3>Edison Lamp</h3>
+      <p>"Edison’s dream turned darkness into destiny."</p>
+      <div class="product-buttons">
+        <button class="add-cart">Add to Cart</button>
+        <button class="buy-now">Buy Now</button>
+      </div>
+      </div>
+    <div class="product-card">
+      <img src="sain.jpg" alt="Table">
+      <h3>Desk Lamp</h3>
+      <p>"Where ideas spark under a humble glow."</p>
+      <div class="product-buttons">
+        <button class="add-cart">Add to Cart</button>
+        <button class="buy-now">Buy Now</button>
+      </div>
+      </div>
+  </div>
+
+
+  <h2 style="text-align:center;padding:15px;">Show pieces</h2>
+  <div class="product-grid">
+    <div class="product-card">
+      <img src="shoe piece.jpg" alt="Sofa">
+      <h3>Couple Showpiece</h3>
+      <p>"Together, we are home."</p>
+      <div class="product-buttons">
+        <button class="add-cart">Add to Cart</button>
+        <button class="buy-now">Buy Now</button>
+      </div>
+      </div>
+    <div class="product-card">
+      <img src="show11.avif" alt="Lamp">
+      <h3>Moving sand</h3>
+      <p>"Moments flow, beauty stays."</p>
+      <div class="product-buttons">
+        <button class="add-cart">Add to Cart</button>
+        <button class="buy-now">Buy Now</button>
+      </div>
+    </div>
+    <div class="product-card">
+      <img src="show2.webp" alt="Table">
+      <h3>Bird sculpture</h3>
+      <p>"Wings carved from dreams."   </p>
+      <div class="product-buttons">
+        <button class="add-cart">Add to Cart</button>
+        <button class="buy-now">Buy Now</button>
+      </div>
+    </div>
+  </div>
+</section>
+
+<div class="contact">
+<h1>Contact us</h1>
+<h3>Email:dikshakarna071@gmail.com</h3>
+</div>
+<form  style="max-width:500px; margin:auto;">
+  <input type="text" name="name" value="Your Name" required style="width:100%; padding:10px; margin:10px 0; border-radius:5px; border:1px solid #ccc;">
+  <input type="email" name="email" value="Your Email" required style="width:100%; padding:10px; margin:10px 0; border-radius:5px; border:1px solid #ccc;">
+  <textarea name="message" rows="5" required style="width:100%; padding:10px; margin:10px 0; border-radius:5px; border:1px solid #ccc;">Your message</textarea>
+  <button type="submit" style="background-color:#5b3e3e; color:white; padding:10px 20px; border:none; border-radius:6px; ">Submit</button>
+</form>
+</div>
     </body>
     </html>
